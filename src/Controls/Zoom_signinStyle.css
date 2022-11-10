@@ -1,0 +1,41 @@
+.textBut{
+ -fx-background-color: White;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-border-color: #E7E7E7;
+}
+
+.pane{
+    -fx-background-color: White;
+}
+
+.logoBtn{
+    -fx-background-color: White;
+    -fx-border-color: #E7E7E7;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+}
+
+.signBtn{
+    -fx-background-color: #F0EFF5;
+    -fx-background-radius: 8;
+}
+.signBtn:hover{
+        -fx-background-color: #238cf7;
+        -fx-border-color:  Transparent;
+        -fx-background-radius: 8;
+        -fx-cursor: Hand;
+        -fx-text-fill: white;
+}
+
+.backBtn{
+    -fx-background-radius: 20;
+    -fx-background-color: Transparent;
+
+}
+.backBtn:hover{
+    -fx-background-color : #E7E7E7;
+    -fx-cursor: Hand;
+}
+
+

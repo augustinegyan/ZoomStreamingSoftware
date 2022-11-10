@@ -1,0 +1,73 @@
+
+.settings_button{
+    -fx-background-color :Transparent;
+}
+
+
+.image_back:hover{
+    -fx-background-color: #FF61F6;
+}
+
+.topComponents{
+    -fx-background-color:#E2E2EA;
+    -fx-border-color: Transparent;
+    -fx-background-radius: 10;
+
+}
+
+.topComponents:hover{
+    -fx-background-color: #AAAAAA;
+    -fx-cursor: Hand;
+}
+
+.topComponentsRight{
+    -fx-background-color:Transparent;
+    -fx-border-color: Transparent;
+    -fx-background-radius: 10;
+
+}
+.topComponentsSearch{
+    -fx-background-color:#E2E2EA;
+    -fx-border-color: Transparent;
+    -fx-background-radius: 12;
+}
+.searchIcon{
+    -fx-background-color: #E2E2EA;
+    -fx-border-color: Transparent;
+    -fx-background-radius: 15;
+}
+.mainPageNewmeetingBtn{
+    -fx-border-color: Transparent;
+    -fx-background-radius: 30;
+    -fx-background-color: #F26C23;
+}
+.mainPageJoinBtn{
+    -fx-border-color: Transparent;
+    -fx-background-radius: 30;
+    -fx-background-color: #1170EF;
+}
+.mainPageScheduleBtn{
+    -fx-border-color: Transparent;
+    -fx-background-radius: 30;
+    -fx-background-color: #0E72EC;
+}
+.mainShareScreenBtn{
+    -fx-border-color: Transparent;
+    -fx-background-radius: 30;
+    -fx-background-color: #116FF4;
+}
+.imageContent{
+
+    -fx-border-width: 2;
+    -fx-background-radius: 15 15 0 0;
+    -fx-background-color: #E2E2EA;
+
+
+
+}
+.chB{
+    -fx-border-width: 2;
+    -fx-background-radius: 15 15 0 0;
+    -fx-background-image: "../Assets/ghana.jpg";
+
+}

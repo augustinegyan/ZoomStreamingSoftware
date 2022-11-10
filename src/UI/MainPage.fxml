@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.Controller">
+   <top>
+      <HBox prefHeight="68.0" prefWidth="1000.0" style="-fx-background-color: #F2F1F6;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="topComponents">
+               <HBox.margin>
+                  <Insets left="15.0" top="20.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/back_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="25.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="topComponents">
+               <HBox.margin>
+                  <Insets left="5.0" top="20.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/forward_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="25.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="topComponents">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" rotate="166.0">
+                     <image>
+                        <Image url="@../Assets/reset_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" minHeight="29.5" mnemonicParsing="false" prefWidth="40.0" styleClass="searchIcon">
+               <HBox.margin>
+                  <Insets left="15.0" top="19.5" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets left="30.0" />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Assets/search_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField prefHeight="31.0" prefWidth="137.0" promptText="Search              Ctrl+F" styleClass="topComponentsSearch">
+               <opaqueInsets>
+                  <Insets bottom="20.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="-20.0" right="40.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <VBox fx:id="homeiconPane" alignment="TOP_CENTER" prefHeight="44.0" prefWidth="33.0">
+               <children>
+                  <ImageView fx:id="home_Icon" fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/home_24px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0e72e1" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets right="35.0" top="18.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox fx:id="chatIconPane" alignment="TOP_CENTER" prefHeight="44.0" prefWidth="33.0">
+               <children>
+                  <ImageView fx:id="chatIcon" fitHeight="20.0" fitWidth="25.0" onMouseClicked="#chatPage" onMouseEntered="#chatHover" onMouseExited="#chatHover_normal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/chat.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="chatText" fill="#757680" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets right="35.0" top="18.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox fx:id="clockiconPane" alignment="TOP_CENTER" prefHeight="44.0" prefWidth="33.0">
+               <children>
+                  <ImageView fx:id="clockIcon" fitHeight="20.0" fitWidth="25.0" onMouseEntered="#meetingsHOver" onMouseExited="#meetingsHover_normal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/clock_24px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#757680" strokeType="OUTSIDE" strokeWidth="0.0" text="Mettings">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="35.0" top="18.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox fx:id="contacticonPane" alignment="TOP_CENTER" prefHeight="44.0" prefWidth="33.0">
+               <children>
+                  <ImageView fx:id="contactIcon" fitHeight="20.0" fitWidth="25.0" onMouseEntered="#contactHover" onMouseExited="#contactHover_normal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/contact2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#757680" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets right="35.0" top="18.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox fx:id="appIconPane" alignment="TOP_CENTER" prefHeight="44.0" prefWidth="33.0">
+               <children>
+                  <ImageView fx:id="appIcon" fitHeight="20.0" fitWidth="25.0" onMouseEntered="#appHover" onMouseExited="#appHover_normal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/apps_tab_24px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#757680" strokeType="OUTSIDE" strokeWidth="0.0" text="Apps">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets right="35.0" top="18.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></HBox>
+   </top>
+   <right>
+      <Pane prefHeight="540.0" prefWidth="74.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" styleClass="image_back">
+               <image>
+                  <Image url="@../Assets/zoom_setting.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="160.0" layoutY="160.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" styleClass="mainPageNewmeetingBtn">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Assets/zoommeeting.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="326.0" layoutY="310.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" styleClass="mainShareScreenBtn">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/zoom_up.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="328.0" layoutY="162.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" styleClass="mainPageJoinBtn">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="164.0" layoutY="308.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" styleClass="mainPageScheduleBtn">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/2020_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Text fill="#757680" layoutX="360.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#757680" layoutX="171.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Meeting">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#757680" layoutX="177.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#757680" layoutX="335.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Share Screen">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="400.0" fitWidth="350.0" layoutX="523.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/me.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="621.0" layoutY="437.0" text="No upcoming meeting today" textFill="WHITE" />
+            <Label fx:id="time" layoutX="656.0" layoutY="183.0" prefHeight="38.0" prefWidth="99.0" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <stylesheets>
+      <URL value="@../Controls/stylesheet.css" />
+      <URL value="@../Controls/stylesheet.css" />
+   </stylesheets>
+</BorderPane>

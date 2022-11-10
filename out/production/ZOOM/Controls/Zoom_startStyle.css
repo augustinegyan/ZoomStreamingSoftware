@@ -1,0 +1,23 @@
+.mainButton{
+    -fx-background-color: #0E72ED;
+    -fx-background-radius: 8;
+}
+.mainButton:hover{
+    -fx-background-color: #14ACE6;
+}
+.mainButton2{
+    -fx-background-color: White;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-border-color: #E7E7E7;
+}
+.mainButton2:hover{
+    -fx-background-color: #14ACE6;
+    -fx-border-color:  Transparent;
+    -fx-background-radius: 8;
+    -fx-cursor: Hand;
+    -fx-text-fill: white;
+}
+.anchorPane{
+    -fx-background-color: White;
+}

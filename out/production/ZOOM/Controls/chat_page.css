@@ -1,0 +1,27 @@
+.logo_1{
+    -fx-background-color:#4A495A;
+    -fx-border-color: Transparent;
+    -fx-background-radius: 10;
+    }
+
+.separator{
+    -fx-background-color:#FFFFFF;
+
+}
+.backgroudColor{
+    -fx-background-color: white;
+}
+.separatorColor{
+    -fx-background-color: #4B4A5C;
+}
+.addBut{
+    -fx-background-color: transparent;
+    -fx-border-radius: 4px;
+    -fx-border-color: #8C8CA4;
+    -fx-border-width: 0.5px;
+}
+.lastLogo{
+    -fx-background-color: #0B6FE4;
+    -fx-border-color: Transparent;
+    -fx-background-radius: 800px;
+    }
